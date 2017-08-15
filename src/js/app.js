@@ -1,5 +1,3 @@
-/**
- * Created by nimishshrestha on 15/8/17.
- */
 import {secretParagraph,secretButton} from './dom-provider';
 
+//Rest of the code goes here.
