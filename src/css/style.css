@@ -1,3 +1,4 @@
+/*@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";*/
 body{
     font-family: Arial, sans-serif;
     margin:0;
@@ -11,4 +12,12 @@ pre{
     padding:0;
     text-align: left;
     float:left;
+}
+code{
+    clear:both;
+    overflow:hidden;
+}
+blockquote{
+    clear:both;
+    overflow:hidden;
 }
