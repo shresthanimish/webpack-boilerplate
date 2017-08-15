@@ -1,0 +1,16 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a boilerplate setup for webpack project",
+  "main": "index.js",
+  "scripts": {
+    "help": "       echo 'Display help information (this screen)';          npm run",
+    "build": "webpack src/js/app.js dist/bundle.js",
+    "build:prod": "webpack src/js/app.js dist/bundle.min.js -p"
+  },
+  "author": "Nimish Shrestha",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.5.4"
+  }
+}

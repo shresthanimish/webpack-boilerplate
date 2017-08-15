@@ -1,0 +1,59 @@
+<html>
+<head>
+    <style>
+        body{font-family: Arial, sans-serif;margin:0;padding:0;color:#2c362f;}
+        main{padding:20px;}
+        pre{margin:0;padding:0;text-align: left;float:left;}
+        code{display:}
+    </style>
+</head>
+<body>
+<main>
+    <h1>Welcome to Webpack Boilerplate</h1>
+
+    Reference: <a href="https://www.youtube.com/watch?v=GU-2T7k9NfI" target="_blank">https://www.youtube.com/watch?v=GU-2T7k9NfI</a>
+    <h3>Steps</h3>
+    <ol>
+        <li>
+            <code>npm init</code>
+            <blockquote>Initializes NPM project. NPM will start managing project from this point.</blockquote>
+        </li>
+        <li>
+            <code>npm install webpack --save-dev</code>
+            <blockquote>Installs webpack. "--save-dev" denotes that this dependency is for development only. This will not be included when packing for production.</blockquote>
+        </li>
+        <li>
+            Add build scripts into package.json into script array.
+            <blockquote>
+                <code>
+                    <pre>
+                    {
+                        "name": "webpack-boilerplate",
+                        "version": "1.0.0",
+                        "description": "This is a boilerplate setup for webpack project",
+                        "main": "index.js",
+                        "scripts": {
+                            "help": "echo 'Display help information (this screen)';     npm run",
+                            "build": "webpack src/js/app.js dist/bundle.js",
+                            "build:prod": "webpack src/js/app.js dist/bundle.min.js -p"
+                        },
+                        "author": "Nimish Shrestha",
+                        "license": "ISC",
+                        "devDependencies": {
+                            "webpack": "^3.5.4"
+                        }
+                    }
+                    </pre>
+                </code>
+            </blockquote>
+        </li>
+        <li>
+            Run:
+            <code>npm run build</code>
+            <code>npm run build:prod</code>
+            <blockquote>Runs npm command and builds distribution files accordingly.</blockquote>
+        </li>
+    </ol>
+</main>
+</body>
+</html>

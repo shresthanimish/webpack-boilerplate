@@ -1,0 +1,27 @@
+#------------------#
+# Ignore: PHP      #
+#------------------#
+error_log
+php.ini
+
+#------------------#
+# Ignore: PHPStorm #
+#------------------#
+.idea/
+.sass-cache/
+webServers.xml
+
+#-----------------------#
+# Ignore: OS Generated  #
+#-----------------------#
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#------------------#
+# Ignore: Node     #
+#------------------#
+node_modules/
