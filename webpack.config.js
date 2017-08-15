@@ -3,15 +3,18 @@ var path = require('path'); //core node js package to "resolve" path. Supports o
 /**
  * This file is automatically identified as webpack config file as long as you name it as "webpack.config.js"
  *
- * __dirname: current directory
- * path: used by webpack prod to locate the output directory
- * publicPath: used by webpack-dev-server to locate the output directory
+ * entry: the first file webpack looks into. The initializer.
+ * output: path to output file
+ *      __dirname: current directory
+ *      path: used by webpack prod to locate the output directory
+ *      publicPath: used by webpack-dev-server to locate the output directory
  *
  * module:
  *      rules:  (-js doesn't require rule, as it is supported out of the box.)
  *              {
  *                  test: creates a rule for 1 or many file extensions. eg: css
- *                  loader: plugs a loader module to handle that file.
+ *                  loader: plugs a loader module to handle that file. Use this if you want to use single loader
+ *                  use: use multiple loader. Please note that webpack loads in reverse order. So css-loader should be at the bottom of the list.
 *               }
  *
  *
@@ -28,7 +31,10 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                loader: 'css-loader'
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
             }
         ]
     }
